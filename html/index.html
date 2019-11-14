@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
     <title>雪松小厨</title>
 </head>
-<body>
+<body style="margin:0;padding:0;">
     <div>
         <header>
             <div class="top-bar">
-                <div class="top-bar-l"><a href="#">亲，请登录|</a><a href="#">免费注册</a></div>
-                <div class="top-bar-r"><a href="#">食材|</a><a href="#">菜谱|</a><a href="#">我的订单|</a><a href="#">购物车</a></div>
+                <div class="top-bar-l"><a href="#">亲，请登录</a><a href="#">免费注册</a></div>
+                <div></div>
+                <div></div>
+                <div class="top-bar-r"><a href="#">食材</a><a href="#">菜谱</a><a href="#">我的订单</a><a href="#">购物车</a></div>
+                
             </div>
             <div class="logo">
-                <img src="../resources/logo.jpg" alt=""> 
-                <input type="text" name="" id="" value="鱼香肉丝"><button>搜索</button>
+                <img class="logo-img" src="../resources/logo.jpg" alt=""> 
+                <div class="search bar6"> 
+                    <form action="">
+                        <input type="text" name="" id="" value="鱼香肉丝">
+                        <button>搜索</button>
+                    </form>
+                </div>  
+                <img class="logo-img" src="../resources/erweima.png" alt=""> 
             </div>
         </header>
         <nav>
+            <span></span>
             <a href="#">鲁菜 </a>
             <a href="#">川菜 </a>
             <a href="#">粤菜 </a>
@@ -27,31 +38,44 @@
             <a href="#">浙菜 </a>
             <a href="#">徽菜 </a>
             <a href="#">湘菜 </a>
+            <span></span>
         </nav>
-        <div><!---->
-            <header>
-                <h1>川菜</h1>
-                <div>简介：川菜XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
-            </header>
-            <div>
-                <span><img src="../resources/yxrs.png" alt="鱼香肉丝"><span>鱼香肉丝</span></span>
-                <span><img src="../resources/yxrs.png" alt=""><span>鱼香肉丝</span></span>
-                <span><img src="../resources/yxrs.png" alt=""><span>鱼香肉丝</span></span>
+        <div class="content">
+            <div class="content-side"></div>
+            <div class="main">
+                <header class="main-head">
+                    <div style="width: 50%;">
+                        <h1>川菜</h1>
+                        <p>简介：川菜是中国八大菜系之一，主要由重庆、成都及川北、川南的地方风味名特菜肴组成，烹制方法有煎、炒、爆、熘、锅贴等近40种3000余种。川菜的味型之多，居各大菜系之首。</p>
+                    </div>
+                    <video src="../resources/chuan.mp4" controls autoplay muted>
+                        Your browser does not support the video tag.
+                    </video>               
+                </header>
+                <div class="card-row">
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                </div>
+                <div class="card-row">
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                </div>
+                <div class="card-row">
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                    <div class="card"><img src="../resources/yxrs.png" alt=""><div class="card-text">宫保鸡丁</div></div>
+                </div>
+                <footer>
+                        版权所有，盗版必究 ©2019-2020 雪松小厨(frozensky.com)保留所有权利 - XXXX号
+                </footer>
             </div>
-            <div>
-                <span><img src="../resources/yxrs.png" alt=""><span>宫保鸡丁</span></span>
-                <span><img src="../resources/yxrs.png" alt=""><span>宫保鸡丁</span></span>
-                <span><img src="../resources/yxrs.png" alt=""><span>宫保鸡丁</span></span>
-            </div>
-            <div>
-                <span><img src="../resources/yxrs.png" alt=""><span>水煮肉片</span></span>
-                <span><img src="../resources/yxrs.png" alt=""><span>水煮肉片</span></span>
-                <span><img src="../resources/yxrs.png" alt=""><span>水煮肉片</span></span>
-            </div>
+            <div class="content-side"></div>
         </div>
-        <footer>
-            版权所有，盗版必究 ©2019-2020 雪松小厨(frozensky.com)保留所有权利 - XXXX号
-        </footer>
     </div>
 </body>
 </html>
