@@ -112,6 +112,7 @@ nav>span{
     width: 200px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 10px 5px 10px 5px;
 }
 
 .card:hover {
