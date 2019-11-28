@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/login_reg_common.css" />
     <title>Document</title>
-</head>
-<body>
-    login
-</body>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-l">
+        <a href="./index.html">首页</a><a href="./login.html">亲，请登录</a
+        ><a href="./register.html">免费注册</a>
+      </div>
+      <div></div>
+      <div></div>
+      <div class="top-bar-r">
+        <a href="#">食材</a><a href="#">菜谱</a><a href="#">我的订单</a
+        ><a href="#">购物车</a>
+      </div>
+    </div>
+    <img
+      class="vegas-background"
+      style="z-index:-2;"
+      src="../resources/back.jpg"
+    />
+    <div class="vegas-overlay"></div>
+    <div class="loginbox">
+      <div class="loginbox_h">
+        <a href="./register.html" class="on">注册</a>
+        <a href="./login.html">登录</a>
+      </div>
+
+      <div class="loginbox_c">
+        <form
+          id="loginform"
+          name="loginform"
+          action="./index.html"
+          method="post"
+        >
+          <div class="loginbox_l">
+            <ul class="mform_r">
+              <li>
+                <label for="username"
+                  >昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</label
+                >
+                <input type="text" name="username" id="username" />
+              </li>
+              <li>
+                <label for="password"
+                  >密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label
+                >
+                <input type="password" name="password" id="password" />
+              </li>
+            </ul>
+            <input
+              type="submit"
+              id="loginbtn"
+              class="loginbtn"
+              value="登&nbsp;录"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
