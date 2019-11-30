@@ -1,10 +1,9 @@
 .top-bar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #333;
   border: 0;
 }
 
-.top-bar-l > a,
-.top-bar-r > a {
+.top-bar-l>a, .top-bar-r>a {
   color: aliceblue;
 }
 
@@ -99,28 +98,28 @@
   margin: 20px 0 20px 0;
 }
 
-.loginbox_l ul > li {
+.loginbox_l ul>li {
   border-bottom: 1px solid #999;
   height: 32px;
   line-height: 32px;
   list-style: none;
+  display: flex;
 }
 
-.loginbox_l ul > li label {
+.loginbox_l ul>li label {
   padding: 0 5px 0 10px;
+  width: 100px;
+  display: flex;
+  justify-content: end;
 }
 
 .loginbox_l ul li input {
-  width: 190px;
+  /* width: 190px; */
   border: 0;
   font-size: 14px;
   background: rgba(0, 0, 0, 0);
-  display: inline-block;
-}
-
-.loginbox_l ul > li label {
-  width: 100px;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .loginbtn {

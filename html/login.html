@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/login_reg_common.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <title>Document</title>
   </head>
 
@@ -30,8 +31,8 @@
     <div class="vegas-overlay"></div>
     <div class="loginbox">
       <div class="loginbox_h">
-        <a href="./register.html" class="on">注册</a>
-        <a href="./login.html">登录</a>
+        <a href="./register.html">注册</a>
+        <a href="./login.html" class="on">登录</a>
       </div>
 
       <div class="loginbox_c">
@@ -49,13 +50,18 @@
                 >
                 <input type="text" name="username" id="username" />
               </li>
-              <li>
+              <li style="border: 0;">
                 <label for="password"
                   >密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label
                 >
                 <input type="password" name="password" id="password" />
               </li>
             </ul>
+            <div class="check">
+              <input type="text" placeholder="在此输入验证码" />
+              <img src="../resources/ValidateCode.jsp.jpg" alt="验证码" />
+              <a href="#">看不清？换一张</a>
+            </div>
             <input
               type="submit"
               id="loginbtn"

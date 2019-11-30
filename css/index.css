@@ -5,18 +5,21 @@ nav {
   padding: 2px 0 2px 0;
   display: flex;
 }
-nav > a {
+
+nav>a {
   margin: 2px 5px 2px 5px;
   text-decoration: none;
   color: azure;
   padding: 3px 6px 3px 6px;
   border-radius: 6px;
 }
-nav > a:hover {
+
+nav>a:hover {
   background-color: azure;
   color: chocolate;
 }
-nav > span {
+
+nav>span {
   width: 25%;
 }
 
@@ -26,10 +29,12 @@ nav > span {
   justify-content: space-around;
   display: flex;
 }
+
 .logo-img {
   height: 132px;
   margin: 0 20px 0 20px;
 }
+
 .search {
   padding: 10px 0;
   margin-top: 40px;
@@ -37,15 +42,17 @@ nav > span {
   width: 50%;
   max-width: 600px;
 }
+
 .bar6 form {
   position: relative;
   margin: 0 auto;
 }
-.bar6 input,
-.bar6 button {
+
+.bar6 input, .bar6 button {
   border: none;
   outline: none;
 }
+
 /*搜索框6*/
 
 .bar6 input {
@@ -60,6 +67,7 @@ nav > span {
   right: 0;
   color: grey;
 }
+
 .bar6 button {
   background: rgb(245, 134, 106);
   border-radius: 0 5px 5px 0;
@@ -72,14 +80,16 @@ nav > span {
   cursor: pointer;
   position: absolute;
 }
+
 .bar6 button:before {
   font-size: 13px;
   color: #f9f0da;
 }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 200px;
+  width: 220px;
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 5px 10px 5px;
@@ -90,28 +100,34 @@ nav > span {
   color: rgb(236, 117, 47);
 }
 
-.card > img {
+.card>img {
   border-radius: 5px 5px 0 0;
   width: 100%;
 }
 
-.card > .card-text {
+.card>.card-text {
   padding: 5px 10px 10px 5px;
   text-align: center;
 }
+
 .card-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 10px 0 50px 0;
 }
+
 .content {
   display: flex;
   justify-content: space-around;
+  background-color: #cfcfcf;
 }
-.content > .main {
-  width: 1200px;
-  margin-top: 30px;
+
+.content>.main {
+  width: 70%;
+  padding-top: 30px;
+  background-color: white;
 }
+
 .main-head {
   border: 1px 0 1px 0;
   border-top: orange solid;
@@ -120,24 +136,24 @@ nav > span {
   display: flex;
   justify-content: space-around;
 }
-.main-head > div > h1 {
+
+.main-head>div>h1 {
   color: red;
   margin-bottom: -20px;
   margin-left: 50px;
 }
-.main-head > video {
+
+.main-head>video {
   /* margin-left: 50%; */
   width: 40%;
 }
-.main-head > div > p {
+
+.main-head>div>p {
   word-wrap: break-word;
   margin-left: 50px;
   margin-top: 50px;
 }
-.content-side {
-  background-color: rgb(228, 228, 228);
-  width: 15%;
-}
+
 footer {
   border-top: rgb(206, 205, 205) solid 1px;
   text-align: center;
