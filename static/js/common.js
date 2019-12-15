@@ -1,3 +1,5 @@
+//Common functions for register and login
+import { hex_md5 } from "./md5.js"
 class MyResponse {
     constructor(success, msg) {
         this.success = success;
@@ -32,4 +34,9 @@ function pformatValid(password) {
     return new MyResponse(true, null);
 }
 
-export { uformatValid, pformatValid }
+function encrypt(password) {
+    let salt = "frozensky";
+    return hex_md5(salt[2] + salt[7] + password + salt[3]);
+}
+
+export { uformatValid, pformatValid, encrypt }

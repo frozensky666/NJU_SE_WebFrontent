@@ -1,4 +1,5 @@
 import { ajax } from './ajax.js';
+import { encrypt } from "./common.js"
 
 codeRefresh();
 
@@ -12,6 +13,14 @@ function login() {
         'password': document.getElementById("password").value,
         'validCode': document.getElementById("code").value
     };
+    if (dataObj.username == null || dataObj.username == "") {
+        alert("用户名不能为空！"); return;
+    } else if (dataObj.password == null || dataObj.password == "") {
+        alert("密码不能为空！"); return;
+    } else if (dataObj.validCode == null || dataObj.validCode == "") {
+        alert("验证码不能为空！"); return;
+    }
+    dataObj.password = encrypt(dataObj.password);
     ajax('post', '/account/login', dataObj, function (res) {
         if (res.success) {
             window.location = "/";

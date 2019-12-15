@@ -1,4 +1,4 @@
-import { pformatValid, uformatValid } from "./common.js"
+import { pformatValid, uformatValid, encrypt } from "./common.js"
 import { ajax } from './ajax.js';
 
 function paformatValid() {
@@ -35,7 +35,7 @@ document.getElementById('loginbtn').addEventListener('click', function (event) {
     if (checkAll()) {
         let dataObj = {
             'username': document.getElementById("username").value,
-            'password': document.getElementById("password").value
+            'password': encrypt(document.getElementById("password").value)
         };
         ajax('post', '/account/register', dataObj, function (res) {
             if (res.success) {
