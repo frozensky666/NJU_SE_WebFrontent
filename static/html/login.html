@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/login_reg_common.css" />
     <link rel="stylesheet" href="../css/login.css" />
-    <title>Document</title>
+    <!-- <script src="../js/ajax.js"></script> -->
+    <title>Login</title>
   </head>
 
   <body>
     <div class="top-bar">
       <div class="top-bar-l">
-        <a href="./index.html">首页</a><a href="./login.html">亲，请登录</a
-        ><a href="./register.html">免费注册</a>
+        <a href="/">首页</a><a href="/account/login">亲，请登录</a
+        ><a href="/account/register">免费注册</a>
       </div>
       <div></div>
       <div></div>
@@ -31,17 +32,12 @@
     <div class="vegas-overlay"></div>
     <div class="loginbox">
       <div class="loginbox_h">
-        <a href="./register.html">注册</a>
-        <a href="./login.html" class="on">登录</a>
+        <a href="/account/register">注册</a>
+        <a href="/account/login" class="on">登录</a>
       </div>
 
       <div class="loginbox_c">
-        <form
-          id="loginform"
-          name="loginform"
-          action="./index.html"
-          method="post"
-        >
+        <form id="loginform" name="loginform" method="post">
           <div class="loginbox_l">
             <ul class="mform_r">
               <li>
@@ -50,7 +46,7 @@
                 >
                 <input type="text" name="username" id="username" />
               </li>
-              <li style="border: 0;">
+              <li>
                 <label for="password"
                   >密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label
                 >
@@ -58,19 +54,16 @@
               </li>
             </ul>
             <div class="check">
-              <input type="text" placeholder="在此输入验证码" />
-              <img src="../resources/ValidateCode.jsp.jpg" alt="验证码" />
-              <a href="#">看不清？换一张</a>
+              <input id="code" type="text" placeholder="在此输入验证码" />
+              <!-- <img src="/account/code" alt="验证码" /> -->
+              <span id="code-embed" style="width: 160px; height: 65px;"></span>
             </div>
-            <input
-              type="submit"
-              id="loginbtn"
-              class="loginbtn"
-              value="登&nbsp;录"
-            />
+            <a id="code-refresh" href="#">看不清？换一张</a>
+            <input id="loginbtn" class="loginbtn" value="登&nbsp;录" />
           </div>
         </form>
       </div>
     </div>
+    <script src="../js/login.js" type="module"></script>
   </body>
 </html>

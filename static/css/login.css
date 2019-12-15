@@ -1,0 +1,15 @@
+.check {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 -20px 0;
+}
+
+#code {
+  border: 2px solid #bbb;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #00000000;
+  padding: 4px;
+}

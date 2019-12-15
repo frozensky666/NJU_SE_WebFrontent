@@ -79,42 +79,48 @@
 .loginbox_c {
   background: rgba(255, 255, 255, 0.8);
   /* background: #fff\9; */
-  height: 250px;
+  height: 270px;
   margin: 0;
   padding: 0;
 }
 
 .loginbox_l {
   width: 340px;
-  padding: 20px;
+  padding: 10px;
   margin: 20px 0 0 40px;
 }
 
 .loginbox_l ul {
   display: block;
-  border: 1px solid #999;
-  border-radius: 4px;
+  /* border: 1px solid #999; */
+  /* border-radius: 4px; */
   padding: 0;
-  margin: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 
 .loginbox_l ul>li {
-  border-bottom: 1px solid #999;
-  height: 32px;
-  line-height: 32px;
+  border: 2px solid #bbb;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: medium;
   list-style: none;
   display: flex;
 }
 
 .loginbox_l ul>li label {
   padding: 0 5px 0 10px;
-  width: 100px;
+  /* width: 100px; */
+  white-space: nowrap;
   display: flex;
   justify-content: end;
 }
 
 .loginbox_l ul li input {
-  /* width: 190px; */
+  width: 100%;
   border: 0;
   font-size: 14px;
   background: rgba(0, 0, 0, 0);
@@ -133,5 +139,11 @@
   text-align: center;
   border: 0;
   cursor: pointer;
-  margin: 5px 0 0;
+  margin: 14px 0 0;
+}
+
+.info {
+  display: flex;
+  justify-content: end;
+  color: #ff6767;
 }

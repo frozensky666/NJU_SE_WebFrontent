@@ -13,8 +13,8 @@
   <body>
     <div class="top-bar">
       <div class="top-bar-l">
-        <a href="./index.html">首页</a><a href="./login.html">亲，请登录</a
-        ><a href="./register.html">免费注册</a>
+        <a href="/">首页</a><a href="/account/login">亲，请登录</a
+        ><a href="/account/register">免费注册</a>
       </div>
       <div></div>
       <div></div>
@@ -31,49 +31,52 @@
     <div class="vegas-overlay"></div>
     <div class="loginbox">
       <div class="loginbox_h">
-        <a href="./register.html" class="on">注册</a>
-        <a href="./login.html">登录</a>
+        <a href="/account/register" class="on">注册</a>
+        <a href="/account/login">登录</a>
       </div>
 
       <div class="loginbox_c">
-        <form
-          id="loginform"
-          name="loginform"
-          action="./index.html"
-          method="post"
-        >
+        <form id="loginform" name="loginform" method="post">
           <div class="loginbox_l">
             <ul class="mform_r">
               <li>
                 <label for="username"
                   >昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</label
                 >
-                <input type="text" name="username" id="username" />
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="4-16位，字母、数字、下划线或者减号"
+                />
               </li>
               <li>
                 <label for="password"
                   >密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label
                 >
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="8-16位，需包含大小写和数字"
+                />
               </li>
-              <li style="border: 0;">
+              <li>
                 <label for="password_again">再次输入密码：</label>
                 <input
                   type="password"
                   name="password_again"
                   id="password_again"
+                  placeholder="与之前输入保持一致"
                 />
               </li>
             </ul>
-            <input
-              type="submit"
-              id="loginbtn"
-              class="loginbtn"
-              value="注&nbsp;册"
-            />
+            <span id="info" class="info"></span>
+            <input id="loginbtn" class="loginbtn" value="注&nbsp;册" />
           </div>
         </form>
       </div>
     </div>
+    <script src="../js/register.js" type="module"></script>
   </body>
 </html>
